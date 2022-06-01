@@ -2,6 +2,23 @@
     border-style: solid;
     width: 25%;
     height: 300px;
+    background-color: pink;
+    /*.inline-block,*/
+    /*.wrap,*/
+    /*.vertical-flex-start {*/
+    /*    display: inline-block;*/
+    /*}*/
+
+
+
+
+
+
+
+
+
+
+
 }
 .card-header {
     margin-top: 10px;
