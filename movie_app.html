@@ -9,12 +9,19 @@ display: none;
 }
 
     </style>
+    <link rel="stylesheet" href="movie_app.css">
 </head>
 <body>
 <div id="loading-image" >
     <img  src='https://i.pinimg.com/564x/55/0f/b6/550fb6e2f4b248f3eaec00cd956a3d91.jpg'>
 </div>
-
+<div class="card">
+    <div class="container">
+        <div class="card-header">Title:</div>
+        <div class="card-body">Rating:</div>
+        <div class="card-footer">ID:</div>
+    </div>
+</div>
 
 <script src="movie_app.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -22,16 +29,7 @@ display: none;
 
 
 
-    fetch('https://tinted-good-pufferfish.glitch.me/movies')
-        .then(function (res) {
-            console.log(res)
-            return res.json();
-        }).then(function (data){
-        console.log(data)
-        $("#loading-image").addClass('hide')
 
-
-    })
 
 
 

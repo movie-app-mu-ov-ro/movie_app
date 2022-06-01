@@ -1,0 +1,21 @@
+.container {
+    border-style: solid;
+    width: 25%;
+    height: 300px;
+}
+.card-header {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.card-body {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.card-footer {
+    position: relative;
+    top: 230px
+}
