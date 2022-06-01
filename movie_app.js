@@ -25,9 +25,11 @@ fetch('https://tinted-good-pufferfish.glitch.me/movies')
     const htmlText = data.map(function(o){
         return`
          <div class="container">
+         <div class="row">
         <div class="card-header">Title:${o.title}</div>
         <div class="card-body">Rating:${o.rating}</div>
         <div class="card-footer">ID:${o.id}</div>
+        </div>
     </div>
 <br>
 `;

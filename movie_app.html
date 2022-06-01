@@ -34,9 +34,21 @@ display: none;
 
 
 
-
-
-
 </script>
+
+<button type="button" onclick="alert('You pressed the button!')">Add Movie</button>
+
+<form action="/form-page" method="post">
+    <ul>
+        <li>
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="movie_title">
+        </li>
+        <li>
+            <label for="rating">Rating:</label>
+            <input type="text" id="rating" name="user_rating">
+        </li>
+    </ul>
+</form>
 </body>
 </html>
