@@ -36,7 +36,6 @@ fetch('https://tinted-good-pufferfish.glitch.me/movies')
 
     $('#movies').append(htmlText)
 
-
 //         `<div class="card">
 //     <div class="container">
 //         <div class="card-header">Title:${o.title}</div>
@@ -53,7 +52,18 @@ fetch('https://tinted-good-pufferfish.glitch.me/movies')
     //   </div>
     //   `;
 
+    const url = 'https://tinted-good-pufferfish.glitch.me/movies/{287}';
+    const options = {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
 
+        body: JSON.stringify(data),
+    };
+    fetch(url, options)
+        .then( response => console.log(response) ) /* review was created successfully */
+        .catch( error => console.error(error) ); /* handle errors */
 
 });
 
