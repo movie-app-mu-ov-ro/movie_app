@@ -72,11 +72,24 @@ display: none;
 </div>
 
 <script>
-    const container = {
-        addMovie: document.getElementById('addMovie'),
-        addRating: document.getElementById('addRating')
-    };
 
-    console.log(container)
+    let title = document.getElementById('addMovie')
+    let rating = document.getElementById('addRating')
+    const btn1 = document.getElementById("btn1")
+
+    function createMovie(e) {
+        e.preventDefault()
+        let movie = {
+            'title': title.value,
+            'rating': rating.value
+       }
+       console.log(movie)
+    }
+
+    btn1.addEventListener("click", createMovie)
+
+
+
+
 
 </script>
