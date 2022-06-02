@@ -73,40 +73,6 @@ display: none;
 
 <script>
 
-    let title = document.getElementById('addMovie')
-    let rating = document.getElementById('addRating')
-    const btn1 = document.getElementById("btn1")
-
-    function createMovie(e) {
-        e.preventDefault()
-        let movie = {
-            'title': title.value,
-            'rating': rating.value
-       }
-
-        const url = 'https://tinted-good-pufferfish.glitch.me/movies';
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(movie),
-        };
-        fetch(url, options)
-            .then( response => console.log(response) ) /* review was created successfully */
-            .catch( error => console.error(error) ); /* handle errors */
-
-
-
-       console.log(movie)
-    }
-
-    btn1.addEventListener("click", createMovie)
-
-
-
-
-
 </script>
 
 
