@@ -29,7 +29,7 @@ fetch('https://tinted-good-pufferfish.glitch.me/movies')
         <div class="card-body"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_s11214cj0Z8H_o9SkPsIArI8tsF4SIQZg&usqp=CAU"></div>
         <div class="card-footer">Rating: ${o.rating}</div>
         <div class="card-footer">ID: ${o.id}</div>
-        </div>
+        <button type="button" class="btn btn-primary"><span class="bi bi-trash"></span></button></div>
 <br>
 `;
     });
@@ -52,10 +52,6 @@ fetch('https://tinted-good-pufferfish.glitch.me/movies')
     //   <p class="p-desc"> ID: ${o.id}</p><br>
     //   </div>
     //   `;
-
-
-
-
 
 
 
